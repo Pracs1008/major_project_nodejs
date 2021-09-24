@@ -1,0 +1,23 @@
+[33mcommit e3d68802c0f380d6da3ec09d2424d3cd5ac8b0ab[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Pracheesh <pracheeshpandey98@gmail.com>
+Date:   Tue Sep 21 22:19:46 2021 +0530
+
+    setup layouts and partialsand static assets
+
+[33mcommit 2a6fca56399b13f82fba4d5d234e59b2c08278cc[m
+Author: Pracheesh <pracheeshpandey98@gmail.com>
+Date:   Sat Sep 18 20:20:44 2021 +0530
+
+    add a controller and a router for home
+
+[33mcommit 652a0d09c44817bb15c15b14407785a3f830f147[m
+Author: Pracheesh <pracheeshpandey98@gmail.com>
+Date:   Fri Sep 3 23:03:36 2021 +0530
+
+    add a controller and a router for home
+
+[33mcommit 5b7e0540db1dabe896984d40d90c4ad22f369245[m
+Author: Pracheesh <pracheeshpandey98@gmail.com>
+Date:   Sat Aug 28 15:23:49 2021 +0530
+
+    First commit: create the directory structure and set up exexpress server
