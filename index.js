@@ -12,6 +12,14 @@ const MongoStore = require('connect-mongo');
 const sassMiddleware = require('node-sass-middleware');
 
 
+app.use(sassMiddleware({
+    src: './assets/scss', // source from where i will get my scss file
+    dest: './assets/css', // place where i will keep my css files
+    debug: true, // info that we see in the terminal if the file cannot be converted
+    outputStyle: 'extended', // in an elaborate way
+    prefix: '/css' // where in assets folder should the server look for the css files
+
+}));
 
 app.use(express.urlencoded({extended: true}));
 app.use(cookieParser());
