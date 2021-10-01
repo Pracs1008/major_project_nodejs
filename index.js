@@ -5,10 +5,10 @@ const port = 8000;
 const expressLayouts = require('express-ejs-layouts');
 const db = require('./config/mongoose');
 // used for session cookie
-const session = require('express-session');
+const session = require('express-session'); // to use session from passport.js
 const passport = require('passport');
 const passportLocal = require('./config/passport-local-strategy');
-const MongoStore = require('connect-mongo');
+const MongoStore = require('connect-mongo'); //  to stroe session in the mongo db
 const sassMiddleware = require('node-sass-middleware');
 
 
