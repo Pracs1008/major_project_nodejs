@@ -5,5 +5,6 @@ const homeController = require('../controllers/home_controller'); // calls the c
 
 router.get('/',homeController.home);
 router.use('/users', require('./users.js'));
+router.use('/posts', require('./posts'));
 
 module.exports = router; //after exporting it we need to tell the app to use it
