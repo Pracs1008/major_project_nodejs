@@ -3,7 +3,7 @@
 
 <section id="feed-posts">
     <h4>Posts</h4>
-    <% if(locals.user){ %>
+    <% if(locals.user){ %> 
     <form action="/posts/create" id="new-post-form" method="POST">
 
         <textarea name="content" cols="30" rows="3" placeholder="Type here..."></textarea>
@@ -23,8 +23,22 @@
                         <small>
                             <%= post.user.name %>
                         </small>
+                    </p>  
+                    <div class="post-comments">
 
-                    </p>   
+                        <% if(locals.user){ %>
+                            <form action="/comments/create" method="POST">
+                                <input type="text" name="content" placeholder="Type here to add comment...">
+                                <!-- id of the post to which the comment needs to be added -->
+                                <!-- hid the post id in these statement -->
+                                <input type="hidden" name="post" value="<%= post._id %>"> 
+                                <input type="submit" value="Add Comment">
+                             </form>
+                        <% } %>     
+
+
+
+                    </div> 
                 </li>
             <% } %>
         </ul>
